@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(8, 1, 17);
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;
+}
+.container {
+  position: relative; /* sets the position of the container element */
+}
+
+.first-page-link, .second-page-link {
+  color: rgb(1, 1, 14);
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px; /* adds a gap between the links */
+  position: absolute; /* sets the position of the links */
+  top: 20px; /* sets the top distance from the container element */
+
+}
+
+.first-page-link {
+  left: 20px; /* sets the left distance for the first page link */
+  right: 50px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.second-page-link {
+  left: 170px; /* sets the left distance for the second page link */
+  right: 50px;
+  padding-left: 20px;
+}
+
+.first-page-link:hover, .second-page-link:hover {
+  text-decoration: underline;
+}
+
+
+/*
+.container {
+  position: relative; /* sets the position of the container element */
+
+/*
+a {
+  position:absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  top: 20px;
+  left: 10px;
+  padding:10px;
+  margin-right: 20px;
+  display: block; /* makes the link a block element so we can center it */
+ /* width: 800px; /* sets the width of the link */
+  /*color: rgb(62, 62, 112); /* sets the color of the link text */
+ /* text-decoration: underline; /* adds an underline to the link text */
+  /*text-align: center; /* centers the link text */
+ /* font-size: 20px; /* sets the font size of the link text */
+
+/*
+a:hover {
+  color: rgb(129, 75, 75); /* changes the color of the link text when hovered over */
+ /* text-decoration: none; /* removes the underline when hovered over */
+ 
+/* select days */
+label {
+  padding: 5px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select option {
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ccc;
+}
+form {
+  padding-top: 20px; 
+  box-shadow: 0 4px 10px rgba(224, 178, 178, 0.1);
+  max-width: 100%;
+  width: 500px;
+}
+
+.input {
+  border: none;
+  color: rgb(49, 18, 18);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #353131;
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+}
+
+.todos {
+  background-color: rgb(162, 124, 124);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border-top: 1px solid #f0aeae;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #b0a9a9;
+  text-decoration: line-through;
+}
+
+small {
+  color: #bcb1b1;
+  margin-top: 3rem;
+  text-align: center;
+}

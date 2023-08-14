@@ -1,0 +1,6 @@
+body {
+    background-image: url('image1.jpg');
+    background-repeat: no-repeat;
+    background-size: 10vw 10vh; /* set width and height to 50% of viewport */
+    animation: slideshow 12s infinite;
+}
